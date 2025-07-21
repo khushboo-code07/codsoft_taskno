@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color:#b4e2e2;
+  color: #333;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d9368b;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffddee;
+}
+
+.header {
+  background-color:#b4e2e2;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.about img {
+  width: 250px;
+  border-radius: 10px;
+  margin-right:224px;
+}
+
+.about div {
+  max-width: 600px;
+}
+
+.skills,
+.projects,
+.resume,
+.services,
+.contact {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.skills ul,
+.services ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.skills li,
+.services li {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #ecf0f1;
+  border-left: 5px solid #619797;
+  border-radius: 5px;
+}
+
+.project {
+  margin-top: 30px;
+}
+
+.project img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.resume a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #26d1d1;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.footer {
+  background-color: #d9368b;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about img {
+    margin: 0 0 20px 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .skills ul,
+  .services ul {
+    flex-direction: column;
+    align-items: center;
+
+    
+  }
+}
